@@ -1,0 +1,5 @@
+rm -rf ~/src
+cp -rf src ~/
+cd ~/src
+make image
+cp -rf ~/src/a.img /mnt/hgfs/虚拟机共享/osmake/trunk/src/a.img

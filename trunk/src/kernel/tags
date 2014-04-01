@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+COL8_000000	.\start.c	16;"	d	file:
+COL8_000084	.\start.c	28;"	d	file:
+COL8_0000FF	.\start.c	20;"	d	file:
+COL8_008400	.\start.c	26;"	d	file:
+COL8_008484	.\start.c	30;"	d	file:
+COL8_00FF00	.\start.c	18;"	d	file:
+COL8_00FFFF	.\start.c	22;"	d	file:
+COL8_840000	.\start.c	25;"	d	file:
+COL8_840084	.\start.c	29;"	d	file:
+COL8_848400	.\start.c	27;"	d	file:
+COL8_848484	.\start.c	31;"	d	file:
+COL8_C6C6C6	.\start.c	24;"	d	file:
+COL8_FF0000	.\start.c	17;"	d	file:
+COL8_FF00FF	.\start.c	21;"	d	file:
+COL8_FFFF00	.\start.c	19;"	d	file:
+COL8_FFFFFF	.\start.c	23;"	d	file:
+CR0_CACHE_DISABLE	.\mm.c	7;"	d	file:
+EFLAGS_AC_BIT	.\mm.c	6;"	d	file:
+MEMMAN_FREES	.\mm.c	4;"	d	file:
+StackSpace	.\kernel.asm	/^StackSpace		resb	2 * 1024$/;"	l
+StackTop	.\kernel.asm	/^StackTop:		; 栈顶$/;"	l
+Textbuf	.\start.c	3;"	d	file:
+_start	.\kernel.asm	/^_start:$/;"	l
+atoi	.\start.c	/^void atoi(char* str, int num)$/;"	f
+call	.\kernel.asm	/^call cstart$/;"	l
+cstart	.\start.c	/^void cstart()$/;"	f
+extern	.\kernel.asm	/^extern	cstart$/;"	l
+global	.\kernel.asm	/^global _start$/;"	l
+init_memman	.\mm.c	/^void init_memman(struct MEMMAN*man){$/;"	f
+init_pic	.\start.c	/^void init_pic(void)$/;"	f
+inthandler21	.\start.c	/^void inthandler21(int *esp)$/;"	f
+jmp	.\kernel.asm	/^jmp $/;"	l
+memman_alloc	.\mm.c	/^unsigned int memman_alloc(struct MEMMAN*man,unsigned int size){$/;"	f
+memman_free	.\mm.c	/^int memman_free(struct MEMMAN*man,unsigned int addr,unsigned int size)$/;"	f
+memman_total	.\mm.c	/^unsigned int memman_total(strcut MEMMAN*man)$/;"	f
+memtest	.\mm.c	/^unsigned int memtest( unsigned int start, unsigned int end )$/;"	f
+mov	.\kernel.asm	/^mov	esp, StackTop	; 堆栈在 bss 段中$/;"	l
+mov	.\kernel.asm	/^mov [gs:(80*12+8)*2],ax$/;"	l
+mov	.\kernel.asm	/^mov ah,0xf$/;"	l
+mov	.\kernel.asm	/^mov al,'K'$/;"	l
+printf	.\start.c	/^void printf(int p,char*str, int len)$/;"	f
+strlen	.\start.c	/^int strlen(const char* str)$/;"	f
+vedobuff	.\start.c	/^char *vedobuff = ((char*)0xa0000);$/;"	v

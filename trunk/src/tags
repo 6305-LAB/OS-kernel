@@ -1,0 +1,207 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+BACK	.\boot\boot.asm	/^BACK:$/;"	l
+BACK	.\boot\loader.asm	/^BACK:$/;"	l
+BaseOfStack	.\boot\loader.asm	/^BaseOfStack	equ	0x100$/;"	d
+BeginExat	.\boot\boot.asm	/^BeginExat:$/;"	l
+BeginLoader	.\boot\boot.asm	/^BeginLoader:$/;"	l
+BeginLoader	.\boot\loader.asm	/^BeginLoader:$/;"	l
+BootMessage	.\boot\boot.asm	/^BootMessage:$/;"	l
+BootMessage	.\boot\loader.asm	/^BootMessage:$/;"	l
+COL8_000000	.\kernel\start.c	16;"	d	file:
+COL8_000084	.\kernel\start.c	28;"	d	file:
+COL8_0000FF	.\kernel\start.c	20;"	d	file:
+COL8_008400	.\kernel\start.c	26;"	d	file:
+COL8_008484	.\kernel\start.c	30;"	d	file:
+COL8_00FF00	.\kernel\start.c	18;"	d	file:
+COL8_00FFFF	.\kernel\start.c	22;"	d	file:
+COL8_840000	.\kernel\start.c	25;"	d	file:
+COL8_840084	.\kernel\start.c	29;"	d	file:
+COL8_848400	.\kernel\start.c	27;"	d	file:
+COL8_848484	.\kernel\start.c	31;"	d	file:
+COL8_C6C6C6	.\kernel\start.c	24;"	d	file:
+COL8_FF0000	.\kernel\start.c	17;"	d	file:
+COL8_FF00FF	.\kernel\start.c	21;"	d	file:
+COL8_FFFF00	.\kernel\start.c	19;"	d	file:
+COL8_FFFFFF	.\kernel\start.c	23;"	d	file:
+CR0_CACHE_DISABLE	.\kernel\mm.c	7;"	d	file:
+ClearScreen	.\boot\boot.asm	/^ClearScreen:$/;"	l
+ClearScreen	.\boot\loader.asm	/^ClearScreen:$/;"	l
+CompareString	.\boot\boot.asm	/^CompareString:$/;"	l
+CompareString	.\boot\loader.asm	/^CompareString:$/;"	l
+DA_32	.\include\hal.h	4;"	d
+DA_386CGate	.\include\hal.h	33;"	d
+DA_386IGate	.\include\hal.h	35;"	d
+DA_386TGate	.\include\hal.h	37;"	d
+DA_386TSS	.\include\hal.h	31;"	d
+DA_C	.\include\hal.h	18;"	d
+DA_CCO	.\include\hal.h	22;"	d
+DA_CCOR	.\include\hal.h	24;"	d
+DA_CR	.\include\hal.h	20;"	d
+DA_DPL0	.\include\hal.h	7;"	d
+DA_DPL1	.\include\hal.h	8;"	d
+DA_DPL2	.\include\hal.h	9;"	d
+DA_DPL3	.\include\hal.h	10;"	d
+DA_DR	.\include\hal.h	12;"	d
+DA_DRW	.\include\hal.h	14;"	d
+DA_DRWA	.\include\hal.h	16;"	d
+DA_LDT	.\include\hal.h	27;"	d
+DA_LIMIT_4K	.\include\hal.h	5;"	d
+DA_TaskGate	.\include\hal.h	29;"	d
+Disstr	.\boot\boot.asm	/^Disstr:$/;"	l
+Disstr	.\boot\loader.asm	/^Disstr:$/;"	l
+EFLAGS_AC_BIT	.\kernel\mm.c	6;"	d	file:
+FOUND_lOADER_FILE	.\boot\boot.asm	/^FOUND_lOADER_FILE:$/;"	l
+FOUND_lOADER_FILE	.\boot\loader.asm	/^FOUND_lOADER_FILE:$/;"	l
+FREEINFO	.\include\mm.h	/^struct FREEINFO{ \/\/可用信息$/;"	s
+Found_File	.\boot\boot.asm	/^Found_File:$/;"	l
+Found_File	.\boot\loader.asm	/^Found_File:$/;"	l
+GATE_DESCRIPTOR	.\include\hal.h	/^struct GATE_DESCRIPTOR$/;"	s
+GdtLen	.\boot\loader.asm	/^GdtLen		equ	$ - LABEL_GDT$/;"	d
+GdtPtr	.\boot\loader.asm	/^GdtPtr		dw	GdtLen - 1				; 段界限$/;"	d
+InitKernel	.\boot\loader.asm	/^InitKernel:	; 遍历每一个 Program Header，根据 Program Header 中的信息来确定把什么放进内存，放到什么位置，以及放多少。$/;"	l
+KernelFile	.\boot\loader.asm	/^KernelFile: db 'KERNEL  BIN' ;内核文件，11字节$/;"	d
+LABEL_DESC_CODE32	.\boot\loader.asm	/^LABEL_DESC_CODE32:		Descriptor   			   0,              0fffffh, DA_CR  | DA_32 | DA_LIMIT_4K			; 0 ~ 4G$/;"	l
+LABEL_DESC_FLAT_RW	.\boot\loader.asm	/^LABEL_DESC_FLAT_RW:		Descriptor  	           0,              0fffffh, DA_DRW | DA_32 | DA_LIMIT_4K			; 0 ~ 4G$/;"	l
+LABEL_DESC_VIDEO	.\boot\loader.asm	/^LABEL_DESC_VIDEO:		Descriptor		 	 0B8000h,               0ffffh, DA_DRW                         | DA_DPL3	; 显存首地址$/;"	l
+LABEL_GDT	.\boot\loader.asm	/^LABEL_GDT:				Descriptor                 0,                    0, 0						; 空描述符$/;"	l
+LABEL_SEG_CODE32	.\boot\loader.asm	/^LABEL_SEG_CODE32:$/;"	l
+LABEL_START	.\boot\loader.asm	/^LABEL_START:			; <--- 从这里开始 *************$/;"	l
+LOADEROK	.\boot\boot.asm	/^LOADEROK:	$/;"	l
+LOADEROK	.\boot\loader.asm	/^LOADEROK:	$/;"	l
+LOADER_FILE	.\boot\boot.asm	/^LOADER_FILE:			db 'LOADER  BIN'	$/;"	d
+Label_Start	.\boot\boot.asm	/^Label_Start:$/;"	l
+MEMMAN	.\include\mm.h	/^struct MEMMAN{ \/\/内存管理$/;"	s
+MEMMAN_FREES	.\kernel\mm.c	4;"	d	file:
+MemCpy	.\boot\loader.asm	/^MemCpy:$/;"	l
+MessageLen	.\boot\boot.asm	/^MessageLen equ 9		;显示的消息长度$/;"	d
+MessageLen	.\boot\loader.asm	/^MessageLen equ 14		;显示的消息长度$/;"	d
+NOFOUND_lOADER_FILE	.\boot\boot.asm	/^NOFOUND_lOADER_FILE:$/;"	l
+NOFOUND_lOADER_FILE	.\boot\loader.asm	/^NOFOUND_lOADER_FILE:$/;"	l
+NotFound	.\boot\boot.asm	/^NotFound:$/;"	l
+NotFound	.\boot\loader.asm	/^NotFound:$/;"	l
+ReadSector	.\boot\boot.asm	/^ReadSector: ;从第ax个Sector开始读取，将cl个Sector读入es:bx中$/;"	l
+ReadSector	.\boot\loader.asm	/^ReadSector: ;从第ax个Sector开始读取，将cl个Sector读入es:bx中$/;"	l
+SA_RPL0	.\include\hal.h	41;"	d
+SA_RPL1	.\include\hal.h	43;"	d
+SA_RPL2	.\include\hal.h	45;"	d
+SA_RPL3	.\include\hal.h	47;"	d
+SA_TIG	.\include\hal.h	50;"	d
+SA_TIL	.\include\hal.h	52;"	d
+SEGMENT_DESCRIPTOR	.\include\hal.h	/^struct SEGMENT_DESCRIPTOR{$/;"	s
+SPValueInRealMode	.\boot\loader.asm	/^SPValueInRealMode dw 0 $/;"	d
+Search_Loader	.\boot\boot.asm	/^Search_Loader:$/;"	l
+Search_Loader	.\boot\loader.asm	/^Search_Loader:$/;"	l
+SelectorCode32	.\boot\loader.asm	/^SelectorCode32		equ	LABEL_DESC_CODE32	- LABEL_GDT$/;"	d
+SelectorFlatRW	.\boot\loader.asm	/^SelectorFlatRW		equ	LABEL_DESC_FLAT_RW	- LABEL_GDT$/;"	d
+SelectorVideo	.\boot\loader.asm	/^SelectorVideo		equ	LABEL_DESC_VIDEO	- LABEL_GDT + SA_RPL3$/;"	d
+StackSpace	.\boot\loader.asm	/^StackSpace:	times	1000h	db	0$/;"	l
+StackSpace	.\kernel\kernel.asm	/^StackSpace		resb	2 * 1024$/;"	l
+StackTop	.\kernel\kernel.asm	/^StackTop:		; 栈顶$/;"	l
+Textbuf	.\kernel\start.c	3;"	d	file:
+TopOfStack	.\boot\loader.asm	/^TopOfStack	equ	BaseOfLoaderPhyAddr + $	; 栈顶$/;"	d
+__GLOBAL_H	.\include\global.h	2;"	d
+__HAL_H	.\include\hal.h	2;"	d
+__MM_H	.\include\mm.h	2;"	d
+_start	.\kernel\kernel.asm	/^_start:$/;"	l
+access_left	.\include\hal.h	/^	char access_left,base_high;$/;"	m	struct:SEGMENT_DESCRIPTOR
+access_right	.\include\hal.h	/^	char base_mid, access_right;$/;"	m	struct:SEGMENT_DESCRIPTOR
+access_right	.\include\hal.h	/^	char dw_count, access_right;$/;"	m	struct:GATE_DESCRIPTOR
+addr	.\include\mm.h	/^int addr,int size;$/;"	m	struct:FREEINFO
+atoi	.\kernel\start.c	/^void atoi(char* str, int num)$/;"	f
+base_high	.\include\hal.h	/^	char access_left,base_high;$/;"	m	struct:SEGMENT_DESCRIPTOR
+base_low	.\include\hal.h	/^	short limt_low, base_low;$/;"	m	struct:SEGMENT_DESCRIPTOR
+base_mid	.\include\hal.h	/^	char base_mid, access_right;$/;"	m	struct:SEGMENT_DESCRIPTOR
+bits	.\hal\hallib.asm	/^bits 32$/;"	l
+call	.\kernel\kernel.asm	/^call cstart$/;"	l
+cstart	.\kernel\start.c	/^void cstart()$/;"	f
+dw	.\boot\boot.asm	/^dw 0xaa55$/;"	l
+dw_count	.\include\hal.h	/^	char dw_count, access_right;$/;"	m	struct:GATE_DESCRIPTOR
+extern	.\kernel\kernel.asm	/^extern	cstart$/;"	l
+free	.\include\mm.h	/^struct FREEINFO free[MEMMAN_FREES];$/;"	m	struct:MEMMAN	typeref:struct:MEMMAN::FREEINFO
+frees	.\include\mm.h	/^int frees,maxfrees,lostsize,losts;$/;"	m	struct:MEMMAN
+gdt	.\hal\hal.c	/^struct SEGMENT_DESCRIPTOR*gdt = (struct SEGMENT_DESCRIPTOR*)0x500;$/;"	v	typeref:struct:SEGMENT_DESCRIPTOR
+global	.\hal\hallib.asm	/^global io_cli$/;"	l
+global	.\hal\hallib.asm	/^global io_inb$/;"	l
+global	.\hal\hallib.asm	/^global io_indw$/;"	l
+global	.\hal\hallib.asm	/^global io_inw$/;"	l
+global	.\hal\hallib.asm	/^global io_load_eflags$/;"	l
+global	.\hal\hallib.asm	/^global io_outb$/;"	l
+global	.\hal\hallib.asm	/^global io_outdw$/;"	l
+global	.\hal\hallib.asm	/^global io_outw$/;"	l
+global	.\hal\hallib.asm	/^global io_sti$/;"	l
+global	.\hal\hallib.asm	/^global io_store_eflags$/;"	l
+global	.\hal\hallib.asm	/^global load_cr0$/;"	l
+global	.\hal\hallib.asm	/^global load_gdtr$/;"	l
+global	.\hal\hallib.asm	/^global load_idtr$/;"	l
+global	.\hal\hallib.asm	/^global memtest_sub$/;"	l
+global	.\hal\hallib.asm	/^global mentest_sub$/;"	l
+global	.\hal\hallib.asm	/^global store_cr0$/;"	l
+global	.\kernel\kernel.asm	/^global _start$/;"	l
+idt	.\hal\hal.c	/^struct GATE_DESCRIPTOR *idt = (struct GATE_DESCRIPTOR*)0x66036;$/;"	v	typeref:struct:GATE_DESCRIPTOR
+inc	.\boot\boot.asm	/^	inc di$/;"	d
+inc	.\boot\loader.asm	/^	inc di$/;"	d
+init_gdtidt	.\hal\hal.c	/^void init_gdtidt(void)$/;"	f
+init_memman	.\kernel\mm.c	/^void init_memman(struct MEMMAN*man){$/;"	f
+init_pic	.\kernel\start.c	/^void init_pic(void)$/;"	f
+inthandler21	.\kernel\start.c	/^void inthandler21(int *esp)$/;"	f
+io_cli	.\hal\hallib.asm	/^io_cli: ;关中断 void io_cli(void);$/;"	l
+io_inb	.\hal\hallib.asm	/^io_inb: ;byte io指令 int io_inb(int port);$/;"	l
+io_indw	.\hal\hallib.asm	/^io_indw: ;int io_indw(int port);$/;"	l
+io_inw	.\hal\hallib.asm	/^io_inw: ;16位in指令 int io_inw(int port);$/;"	l
+io_load_eflags	.\hal\hallib.asm	/^io_load_eflags:	;将eflags值返回 int io_load_eflags(void);$/;"	l
+io_outb	.\hal\hallib.asm	/^io_outb:	;byte io指令 void io_outb(int port,int data)$/;"	l
+io_outdw	.\hal\hallib.asm	/^io_outdw: 			;void io_outdw(int port,int data)$/;"	l
+io_outw	.\hal\hallib.asm	/^io_outw: ;void io_outw(int port,int data)$/;"	l
+io_sti	.\hal\hallib.asm	/^io_sti:	;开中断 void io_sti(void);$/;"	l
+io_store_eflags	.\hal\hallib.asm	/^io_store_eflags: ;回复eflags void io_store_eflags(int eflags);$/;"	l
+jmp	.\boot\loader.asm	/^jmp LABEL_START$/;"	l
+jmp	.\kernel\kernel.asm	/^jmp $/;"	l
+limt_low	.\include\hal.h	/^	short limt_low, base_low;$/;"	m	struct:SEGMENT_DESCRIPTOR
+load_cr0	.\hal\hallib.asm	/^load_cr0:$/;"	l
+load_gdtr	.\hal\hallib.asm	/^load_gdtr:		; void load_gdtr(int limit, int addr);$/;"	l
+load_idtr	.\hal\hallib.asm	/^load_idtr:		; void load_idtr(int limit, int addr);$/;"	l
+losts	.\include\mm.h	/^int frees,maxfrees,lostsize,losts;$/;"	m	struct:MEMMAN
+lostsize	.\include\mm.h	/^int frees,maxfrees,lostsize,losts;$/;"	m	struct:MEMMAN
+maxfrees	.\include\mm.h	/^int frees,maxfrees,lostsize,losts;$/;"	m	struct:MEMMAN
+memman_alloc	.\kernel\mm.c	/^unsigned int memman_alloc(struct MEMMAN*man,unsigned int size){$/;"	f
+memman_free	.\kernel\mm.c	/^int memman_free(struct MEMMAN*man,unsigned int addr,unsigned int size)$/;"	f
+memman_total	.\kernel\mm.c	/^unsigned int memman_total(strcut MEMMAN*man)$/;"	f
+memtest	.\kernel\mm.c	/^unsigned int memtest( unsigned int start, unsigned int end )$/;"	f
+memtest_sub	.\hal\hallib.asm	/^memtest_sub: ;unsigned int memtest_sub(unsigned int start,unsigned int end)$/;"	l
+mov	.\kernel\kernel.asm	/^mov	esp, StackTop	; 堆栈在 bss 段中$/;"	l
+mov	.\kernel\kernel.asm	/^mov [gs:(80*12+8)*2],ax$/;"	l
+mov	.\kernel\kernel.asm	/^mov ah,0xf$/;"	l
+mov	.\kernel\kernel.asm	/^mov al,'K'$/;"	l
+mts_fin	.\hal\hallib.asm	/^mts_fin:$/;"	l
+mts_loop	.\hal\hallib.asm	/^mts_loop:$/;"	l
+mul	.\boot\boot.asm	/^	mul dh$/;"	d
+mul	.\boot\boot.asm	/^	mul dl$/;"	d
+mul	.\boot\loader.asm	/^	mul dh$/;"	d
+mul	.\boot\loader.asm	/^	mul dl$/;"	d
+offset_high	.\include\hal.h	/^	short offset_high;$/;"	m	struct:GATE_DESCRIPTOR
+offset_low	.\include\hal.h	/^	short offset_low, selector;$/;"	m	struct:GATE_DESCRIPTOR
+org	.\boot\boot.asm	/^org 0x100$/;"	l
+org	.\boot\boot.asm	/^org 0x7c00$/;"	l
+org	.\boot\loader.asm	/^org 0x100$/;"	l
+pop	.\boot\boot.asm	/^	pop di$/;"	d
+pop	.\boot\boot.asm	/^	pop dx$/;"	d
+pop	.\boot\loader.asm	/^	pop di$/;"	d
+pop	.\boot\loader.asm	/^	pop dx$/;"	d
+printf	.\kernel\start.c	/^void printf(int p,char*str, int len)$/;"	f
+push	.\boot\boot.asm	/^	push di$/;"	d
+push	.\boot\boot.asm	/^	push dx$/;"	d
+push	.\boot\loader.asm	/^	push di$/;"	d
+push	.\boot\loader.asm	/^	push dx$/;"	d
+selector	.\include\hal.h	/^	short offset_low, selector;$/;"	m	struct:GATE_DESCRIPTOR
+set_gatedesc	.\hal\hal.c	/^void set_gatedesc(struct GATE_DESCRIPTOR*gd, unsigned int offset, unsigned int selector, unsigned int ar)$/;"	f
+set_segmendsec	.\hal\hal.c	/^void set_segmendsec(struct SEGMENT_DESCRIPTOR*sd, unsigned int limit, unsigned int base, int ar)$/;"	f
+size	.\include\mm.h	/^int addr,int size;$/;"	m	struct:FREEINFO
+store_cr0	.\hal\hallib.asm	/^store_cr0:$/;"	l
+strlen	.\kernel\start.c	/^int strlen(const char* str)$/;"	f
+times	.\boot\boot.asm	/^times 510-($-$$) db 0$/;"	l
+vedobuff	.\kernel\start.c	/^char *vedobuff = ((char*)0xa0000);$/;"	v
